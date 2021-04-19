@@ -8,12 +8,30 @@
     <title>Restaurant</title>
 </head>
 <body>
+    <header>
+        <a href="#" class="logo">Food <span>.</span></a>
+        <ul class="navigation">
+            <li><a href="banner">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="menu">Menu</a></li>
+            <li><a href="expert">Expert</a></li>
+            <li><a href="testimonials">Testimonials</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+    </header>
     <section class="banner" id="banner">
         <div class="content">
             <h2>Always Choose Good</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo unde architecto exercitationem laudantium facere minima doloremque harum alias porro deserunt!  </p>
-            <a href="#">Our Menu</a>
+            <a href="#" class="btn">Our Menu</a>
         </div>
     </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
 </body>
 </html>
