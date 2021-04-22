@@ -302,3 +302,30 @@ section {
   font-weight: 300;
   resize: none;
 }
+.contactform .inputBox input[type="submit"] {
+  font-size: 1em;
+  background: #ff0157;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5;
+  max-width: 100px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.copyrightText {
+  padding: 8px 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.copyrightText p {
+  color: #333;
+}
+.copyrightText a {
+  color: #ff0157;
+  font-weight: 500;
+  text-decoration: none;
+}
