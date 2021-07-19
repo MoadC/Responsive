@@ -9,7 +9,8 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Food <span>.</span></a>
+        <a href="#" class="logo">F<span>o.o</span>d</a>
+        <div class="menuToggle" onclick="toggleMenu()"></div>
         <ul class="navigation">
             <li><a href="#banner">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -21,7 +22,7 @@
     </header>
     <section class="banner" id="banner">
         <div class="content">
-            <h2>Always Choose Good</h2>
+            <h2>Always Eat Healthy</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo unde architecto exercitationem laudantium facere minima doloremque harum alias porro deserunt!  </p>
             <a href="#menu" class="btn">Our Menu</a>
         </div>
@@ -209,6 +210,12 @@
             const header = document.querySelector('header');
             header.classList.toggle("sticky", window.scrollY > 0);
         });
+        function toggleMenu(){
+            const menuToggle=document.querySelector('.menuToggle');
+            const navigation= document.querySelector('.navigation')
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
     </script>
 </body>
 </html>
